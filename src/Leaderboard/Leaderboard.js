@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { dummyData } from "../dummyData";
 import "./Leaderboard.css";
-import FunderProImg from "./FunderPro-Logo-removebg-preview.png";
 
 const Leaderboard = () => {
   const [data, setData] = useState([]);
@@ -13,37 +12,26 @@ const Leaderboard = () => {
 
   return (
     <>
-      <nav>
-        <img src={FunderProImg} alt="FunderProImg" className="FunderProImg" />
-        <section className="navLinks">
-          <p>Leaderboard</p>
-          <p>Competitions</p>
-          <button>Sign Up</button>
-        </section>
-      </nav>
-      <h1>FunderPro Leaderboard</h1>
-      <section>
+      <section className="tableSection">
         <table className="table">
-          <caption className="table-caption">Performance Table</caption>
+          <caption className="table-caption">Top 10 Traders</caption>
           <thead>
             <tr>
-              <td>#Rank</td>
-              <td>Name</td>
-              <td>Return %</td>
-              <td>$ Profit</td>
+              <th>#Rank</th>
+              <th>Name</th>
+              <th>Return %</th>
+              <th>$ Profit</th>
             </tr>
           </thead>
           <tbody>
-            {data.map((item) => {
-              return (
-                <tr key={item.rank}>
-                  <td>{item.rank}</td>
-                  <td>{item.name}</td>
-                  <td>{item.return} %</td>
-                  <td>${item.profit}</td>
-                </tr>
-              );
-            })}
+            {data.map((item) => (
+              <tr key={item.rank}>
+                <td>{item.rank}</td>
+                <td>{item.name}</td>
+                <td>{item.return} %</td>
+                <td>${item.profit}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </section>
