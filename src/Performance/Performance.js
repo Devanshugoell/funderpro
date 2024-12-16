@@ -1,6 +1,6 @@
 import React from "react";
 import "./Performance.css";
-import AreaChart from "../AreaChart/AreaChart";
+import AreaChartComponent from "../AreaChart/AreaChart";
 
 const Performance = () => {
   return (
@@ -44,7 +44,7 @@ const Performance = () => {
           <p>NO. Trades Placed</p>
         </section>
       </section>
-      <AreaChart />
+      <AreaChartComponent />
     </div>
   );
 };
