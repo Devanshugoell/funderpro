@@ -21,8 +21,10 @@ const Leaderboard = () => {
           <button>Sign Up</button>
         </section>
       </nav>
+      <h1>FunderPro Leaderboard</h1>
       <section>
         <table className="table">
+          <caption className="table-caption">Performance Table</caption>
           <thead>
             <tr>
               <td>#Rank</td>
