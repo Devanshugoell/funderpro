@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Leaderboard />
-      <Performance />
+      <div className="FunderProComponents">
+        <Leaderboard />
+        <Performance />
+      </div>
     </div>
   );
 }

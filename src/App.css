@@ -1,0 +1,6 @@
+.FunderProComponents {
+  display: flex;
+  /* align-items: stretch; */
+  gap: 10px;
+  width: 98%;
+}
