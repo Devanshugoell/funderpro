@@ -39,3 +39,43 @@ nav .navLinks button {
   margin: 0.5em;
   margin-left: 1em;
 }
+
+.nav-toggle {
+  display: none;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  nav .FunderProImg {
+    width: 9em;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav .navLinks {
+    padding-block: 20px;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    width: 100%;
+    left: -100%;
+    top: 100%;
+  }
+
+  .navLinks.active {
+    left: 0%;
+  }
+
+  .nav-toggle {
+    margin: 1em;
+    font-size: 1.2rem;
+    display: inline-block;
+    color: #000;
+  }
+}
