@@ -5,6 +5,17 @@ import "./Leaderboard.css";
 const Leaderboard = () => {
   const [data, setData] = useState();
 
+  const rankColors = {
+    1: "#FFD700",
+    2: "#C0C0C0",
+    3: "#CD7F32",
+    4: "rgb(0, 167, 225)",
+    5: "rgb(105, 102, 102)",
+    6: "rgb(105, 102, 102)",
+    7: "rgb(105, 102, 102)",
+    8: "rgb(105, 102, 102)",
+  };
+
   //useEffect will gets render when component gets mounted
   useEffect(() => {
     setTimeout(() => {
@@ -29,14 +40,35 @@ const Leaderboard = () => {
               </tr>
             </thead>
             <tbody>
-              {data.map((item) => (
-                <tr key={item.rank}>
-                  <td>{item.rank}</td>
-                  <td>{item.name}</td>
-                  <td>{item.return} %</td>
-                  <td>${item.profit}</td>
-                </tr>
-              ))}
+              {data.map((item) => {
+                const backgroundColor = rankColors[item.rank] || "#f0f0f0";
+                const textColor = item.rank <= 8 ? "#fff" : "#333";
+
+                return (
+                  <tr key={item.rank}>
+                    <td>
+                      <div
+                        style={{
+                          borderRadius: "50%",
+                          width: "30px",
+                          height: "30px",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          margin: "auto",
+                          backgroundColor: backgroundColor,
+                          color: textColor,
+                        }}
+                      >
+                        {item.rank}
+                      </div>
+                    </td>
+                    <td>{item.name}</td>
+                    <td>{item.return} %</td>
+                    <td>${item.profit}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
           <section className="tradersBottom">
