@@ -11,35 +11,30 @@ import React from "react";
 
 const ProductSales = [
   {
-    date: "2024-01-01",
+    date: "2024/01/01",
     sales: 10000,
   },
   {
-    date: "2024-02-01",
+    date: "2024/02/01",
     sales: 10054,
   },
   {
-    date: "2024-03-01",
+    date: "2024/03/01",
     sales: 10079,
   },
   {
-    date: "2024-04-01",
+    date: "2024/04/01",
     sales: 10016,
   },
   {
-    date: "2024-05-01",
+    date: "2024/05/01",
     sales: 10441,
   },
   {
-    date: "2024-06-01",
+    date: "2024/06/01",
     sales: 10366,
   },
 ];
-
-const formatDate = (date) => {
-  const options = { month: "short", day: "numeric" }; // e.g., "Jan 1"
-  return new Date(date).toLocaleDateString("en-US", options);
-};
 
 const AreaChartComponent = () => {
   return (
