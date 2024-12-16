@@ -3,6 +3,15 @@
   background-color: rgba(128, 128, 128, 0.063);
 }
 
+.table tbody tr:first-child {
+  border: 2px solid rgb(0, 167, 225);
+}
+
+.table tbody tr:hover {
+  border: 2px solid rgb(0, 167, 225);
+  cursor: pointer;
+}
+
 .table-caption {
   font-weight: bold;
   text-align: left;
@@ -60,4 +69,12 @@
 .tradersBottom #updatedTime {
   margin: 1em;
   font-weight: 600;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1024px) {
+  .tableSection {
+    width: 90%;
+  }
 }
