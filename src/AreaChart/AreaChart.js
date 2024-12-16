@@ -8,6 +8,7 @@ import {
   Tooltip,
 } from "recharts";
 import React from "react";
+import "./AreaChart.css";
 
 const ProductSales = [
   {
@@ -38,7 +39,7 @@ const ProductSales = [
 
 const AreaChartComponent = () => {
   return (
-    <div style={{ width: "100%", height: "500px" }}>
+    <div className="Areachart">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={ProductSales}>
           <XAxis dataKey="date" />
