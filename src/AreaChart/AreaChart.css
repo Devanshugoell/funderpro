@@ -1,0 +1,12 @@
+/* Responsiveness */
+
+.Areachart {
+  width: 100%;
+  height: 500px;
+}
+
+@media screen and (max-width: 1024px) {
+  .Areachart {
+    height: 750px;
+  }
+}
