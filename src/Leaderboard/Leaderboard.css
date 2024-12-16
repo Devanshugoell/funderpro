@@ -1,12 +1,3 @@
-.table thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-
-.table tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
-
 .table thead tr,
 .table tr:nth-child(even) {
   background-color: rgba(128, 128, 128, 0.063);
@@ -39,4 +30,34 @@
   border-radius: 5px;
   max-width: 40%;
   margin: 2em;
+  padding-bottom: 1em;
+}
+
+.spinner {
+  display: grid;
+  place-self: center;
+  min-height: 80vh;
+}
+.spin {
+  width: 65px;
+  height: 65px;
+  place-self: center;
+  border: 5px solid #bdbdbd;
+  border-radius: 50%;
+  border-top-color: #ffffff;
+  animation: rotate 2s infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.tradersBottom {
+  margin: 1em;
+}
+.tradersBottom #updatedTime {
+  margin: 1em;
+  font-weight: 600;
 }
