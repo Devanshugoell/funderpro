@@ -26,9 +26,9 @@
 }
 
 .tableSection {
-  box-shadow: 0px 0px 3px 3px rgba(128, 128, 128, 0.186);
+  box-shadow: 0px 0px 30px 3px rgba(128, 128, 128, 0.23);
   border-radius: 5px;
-  max-width: 40%;
+  /* max-width: 40%; */
   margin: 2em;
   padding-bottom: 1em;
 }
