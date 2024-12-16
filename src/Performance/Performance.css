@@ -8,7 +8,7 @@
 }
 
 h2 {
-  padding: 1em;
+  padding: 0.7em 1em;
 }
 .stats {
   display: grid;
@@ -19,4 +19,27 @@ h2 {
 }
 .box {
   padding: 1em;
+}
+
+.box p:first-child {
+  font-weight: 600;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 1024px) {
+  .performance {
+    max-width: 90%;
+    width: 100%;
+  }
+  .data-chart {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .data-chart {
+    display: flex;
+    flex-direction: column;
+  }
 }
