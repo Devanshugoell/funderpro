@@ -1,3 +1,13 @@
+/* Styling of table   */
+
+.tableSection {
+  box-shadow: 0px 0px 30px 3px rgba(128, 128, 128, 0.23);
+  border-radius: 5px;
+  width: 48%;
+  margin: 2em;
+  padding-bottom: 1em;
+}
+
 .table thead tr,
 .table tr:nth-child(even) {
   background-color: rgba(128, 128, 128, 0.063);
@@ -34,13 +44,17 @@
   border-top: 1px solid #dee2e6;
 }
 
-.tableSection {
-  box-shadow: 0px 0px 30px 3px rgba(128, 128, 128, 0.23);
-  border-radius: 5px;
-  width: 48%;
-  margin: 2em;
-  padding-bottom: 1em;
+/* Styling of table bottom section  */
+
+.tradersBottom {
+  margin: 1em;
 }
+.tradersBottom #updatedTime {
+  margin: 1em;
+  font-weight: 600;
+}
+
+/* Styling of spinner  */
 
 .spinner {
   display: grid;
@@ -61,14 +75,6 @@
   100% {
     transform: rotate(360deg);
   }
-}
-
-.tradersBottom {
-  margin: 1em;
-}
-.tradersBottom #updatedTime {
-  margin: 1em;
-  font-weight: 600;
 }
 
 /* Responsiveness */

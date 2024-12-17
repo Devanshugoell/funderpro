@@ -3,6 +3,8 @@
   margin-bottom: 1em;
 }
 
+/* styling of nav  */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -35,6 +37,9 @@ nav .navLinks button {
 .navLinks :first-child {
   color: rgb(0, 167, 225);
 }
+
+/* Styling of heading  */
+
 .heading {
   margin: 0.5em;
   margin-left: 1em;
