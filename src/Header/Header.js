@@ -21,7 +21,7 @@ const Header = () => {
           <p>Competitions</p>
           <button>Sign Up</button>
         </section>
-        <a href="#" className="nav-toggle" id="nav-toggle" onClick={toggleNav}>
+        <a href="#!" className="nav-toggle" id="nav-toggle" onClick={toggleNav}>
           <i className="fas  fa-bars"></i>
         </a>
       </nav>
