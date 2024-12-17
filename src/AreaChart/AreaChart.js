@@ -42,7 +42,9 @@ const AreaChartComponent = () => {
     <div className="Areachart">
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart data={ProductSales}>
+          {/* x axis */}
           <XAxis dataKey="date" />
+          {/* Y axis  */}
           <YAxis />
           <Tooltip />
           <Area

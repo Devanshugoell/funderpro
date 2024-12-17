@@ -45,6 +45,7 @@ const Performance = () => {
             <p>NO. Trades Placed</p>
           </section>
         </section>
+        {/* Intigrating the Chart component  */}
         <AreaChartComponent />
       </section>
     </div>

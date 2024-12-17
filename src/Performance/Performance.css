@@ -10,6 +10,9 @@
 h2 {
   padding: 0.7em 1em;
 }
+
+/* Grid for the responsiveness  */
+
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));

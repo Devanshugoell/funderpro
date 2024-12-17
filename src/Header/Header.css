@@ -40,6 +40,8 @@ nav .navLinks button {
   margin-left: 1em;
 }
 
+/* To hide the hamburger menu  */
+
 .nav-toggle {
   display: none;
 }

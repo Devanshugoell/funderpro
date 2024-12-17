@@ -5,6 +5,8 @@ import "./Leaderboard.css";
 const Leaderboard = () => {
   const [data, setData] = useState();
 
+  // Rank colons according to the ranks
+
   const rankColors = {
     1: "#FFD700",
     2: "#C0C0C0",
@@ -40,8 +42,11 @@ const Leaderboard = () => {
               </tr>
             </thead>
             <tbody>
+              {/* Mapping through each item of the dummyData */}
               {data.map((item) => {
+                //To set the background color of the rank
                 const backgroundColor = rankColors[item.rank] || "#f0f0f0";
+                //To set the text color of the rank
                 const textColor = item.rank <= 8 ? "#fff" : "#333";
 
                 return (
@@ -84,6 +89,7 @@ const Leaderboard = () => {
     );
   } else {
     return (
+      // spinner till the data loads
       <section className="tableSection">
         <div className="spinner">
           <div className="spin"></div>
