@@ -48,9 +48,11 @@ const Leaderboard = () => {
                 const backgroundColor = rankColors[item.rank] || "#f0f0f0";
                 //To set the text color of the rank
                 const textColor = item.rank <= 8 ? "#fff" : "#333";
+                //Object destructuring
+                const { rank, name, returns, profit } = item;
 
                 return (
-                  <tr key={item.rank}>
+                  <tr key={rank}>
                     <td>
                       <div
                         style={{
@@ -65,12 +67,12 @@ const Leaderboard = () => {
                           color: textColor,
                         }}
                       >
-                        {item.rank}
+                        {rank}
                       </div>
                     </td>
-                    <td>{item.name}</td>
-                    <td>{item.return} %</td>
-                    <td>${item.profit}</td>
+                    <td>{name}</td>
+                    <td>{returns} %</td>
+                    <td>${profit}</td>
                   </tr>
                 );
               })}
